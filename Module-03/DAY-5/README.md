@@ -1,55 +1,61 @@
-# Ex.No:4(A)  JAVA CONSTRUCTOR
+# Ex.No:3(E)    STRING BUILDER IN JAVA
+
 ## AIM:
-To create a Java program using constructor to print the circumference of rectangle.[l=5,w=6]
+To Create a java program use replace() method replaces the given String from the specified beginIndex and endIndex and use stringbuilder
 
 ## ALGORITHM :
-1.  1.	Start the Program.
-2.	Define a class `circum`
-3.	Inside the class, define two integer variables `l` and `w` with values 5 and 6, respectively
-4.	Create a constructor `circum()`:
--	a) Calculate the `circumference` as `2 * (l + w)`
--	b) Print the `circumference` twice with different labels ("Area of First Rectangle" and "Area of Second Rectangle")
-5.	In `main`, create an object `sc` of the `circum` class
-6.	End
+1.  Start the Program
+2.	Import `Scanner` and define class `replace`
+3.	In `main`:
+-	a) Create `Scanner` object `sc`
+-	b) Read a string `str` from user input
+4.	Create a `StringBuilder` object `sb` initialized with `str`
+5.	Use the `replace()` method to replace characters from index 1 to 3 with "Java"
+6.	Print the modified string using `sb.toString()`
+7.	End
+
+
+
+
+
+
 ## PROGRAM:
  ```
 /*
-Program to implement a Constructor using Java
-Developed by:KABIL S
-RegisterNumber: 212222040067
+Program to implement a String Builder using Java
+Developed by: KABIL S
+RegisterNumber:  212222040067
 */
 ```
 
 ## Sourcecode.java:
-```
-import java.util.*;
-class Car 
-{
-	String brand;
-    Car(String a)
-    {
-        brand = a;
-	}
-	public String getBrand() 
-	{
-	    return (brand);
-	}
-}
-public class Sample 
-{
-	public static void main(String[] args) 
-	{
-        Car l = new Car("Apple");
-        System.out.print(l.getBrand());
-	}
+
+import java.util.Scanner;
+
+public class StringBuilderAppend {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        scanner.close();
+
+        StringBuilder sb1 = new StringBuilder(input); // Initialize with input
+        sb1.append("s");
+
+        System.out.println("sb1 = " + sb1.toString());
+    }
 }
 
-```
+
+
 
 
 ## OUTPUT:
 
-<img width="491" alt="Image" src="https://github.com/user-attachments/assets/51c5ce08-5f9a-414d-879b-d7223ac041bd" />
+<img width="396" alt="Image" src="https://github.com/user-attachments/assets/a4d4c276-cb4b-497b-9c75-2ec65537a593" />
 
 ## RESULT:
-Thus the Java program using constructor to print the circumference of rectangle was executed successfully.
+Thus the java program use replace() method replaces the given String from the specified beginIndex and endIndex and use stringbuilder was executed successfully.
+
+
+
